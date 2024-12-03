@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>manipulator_grasping</name>
+  <version>0.0.0</version>
+  <description>The manipulator_grasping package</description>
+
+  <maintainer email="m.soltanshah1990@gmail.com">Mohammad Soltanshah</maintainer>
+
+  <license>SFU Confidential</license>
+
+  <author email="m.soltanshah1990@gmail.com">Mohammad Soltanshah</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>mavros_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>mavros_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>mavros_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <depend>open_manipulator_msgs</depend>
+  <depend>uam_msgs</depend>
+  <depend>tf2_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>qtbase5-dev</depend>
+  <depend>qt5-qmake</depend>
+  <depend>libqt5-core</depend>
+  <depend>libqt5-gui</depend>
+  <depend>cmake_modules</depend>
+  <depend>eigen</depend>
+
+  <export>
+  </export>
+
+</package>
