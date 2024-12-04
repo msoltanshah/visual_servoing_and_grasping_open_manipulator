@@ -59,7 +59,7 @@ namespace VSGrasping
             double shift_x = 0.05, shift_y = 0.0, shift_z = 0.0;
             double point_x, point_y, point_z;
 
-            std::vector<double> t_0_B = { 0.11, 0, 0}, t_B_C = { 0.15, 0.45, 0.2};
+            std::vector<double> t_0_B = { 0.11, 0, 0}, t_B_C = { 0.15, 0.45, 0.2}; // Fixed Open Manipulator Configuration
 
             std::vector<double> calculateTransformation(double p_O_x_num, double p_O_y_num, double p_O_z_num, const geometry_msgs::PoseStamped& object_pose_message);
             std::array<std::array<double,4>,4> matMult_4x4(std::array<std::array<double,4>,4> a, std::array<std::array<double,4>,4> b);

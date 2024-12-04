@@ -123,8 +123,6 @@ std::vector<double> VSGraspingNode::calculateTransformation(double p_O_x_num, do
     int i, j, k;
     std::vector<double> X_vector_num = { 0, 0, 0, 0 };
     std::vector<double> p_O_vector_num = { p_O_x_num, p_O_y_num, p_O_z_num, 1 };
-    // std::vector<double> p_O_vector_num = { p_O_x, p_O_y, p_O_z, 1 };
-    // double p_0_x_num, p_0_y_num, p_0_z_num;
 
     // C to O
     R_C_O_z[0][0] = cos(-PI/2); R_C_O_z[0][1] = -sin(-PI/2); R_C_O_z[0][2] = 0;
@@ -202,11 +200,6 @@ bool VSGraspingNode::setTaskSpacePath(std::vector<double> kinematics_pose, doubl
   srv_task_space.request.kinematics_pose.pose.position.y = kinematics_pose[1];
   srv_task_space.request.kinematics_pose.pose.position.z = kinematics_pose[2];
 
-//   srv.request.kinematics_pose.pose.orientation.w = 0;
-//   srv.request.kinematics_pose.pose.orientation.x = 0;
-//   srv.request.kinematics_pose.pose.orientation.y = 0;
-//   srv.request.kinematics_pose.pose.orientation.z = 0;
-
   srv_task_space.request.path_time = path_time;
 
   if(goal_task_space_client_.call(srv_task_space))
@@ -215,30 +208,6 @@ bool VSGraspingNode::setTaskSpacePath(std::vector<double> kinematics_pose, doubl
   }
   return false;
 }
-
-// bool VSGraspingNode::setTaskSpacePathGrab(std::vector<double> kinematics_pose, double path_time)
-// {
-//   open_manipulator_msgs::SetKinematicsPose srv_task_space_grab;
-
-//   srv_task_space_grab.request.end_effector_name = "gripper";
-
-//   srv_task_space_grab.request.kinematics_pose.pose.position.x = kinematics_pose[0];
-//   srv_task_space_grab.request.kinematics_pose.pose.position.y = kinematics_pose[1];
-//   srv_task_space_grab.request.kinematics_pose.pose.position.z = kinematics_pose[2];
-
-// //   srv.request.kinematics_pose.pose.orientation.w = 0;
-// //   srv.request.kinematics_pose.pose.orientation.x = 0;
-// //   srv.request.kinematics_pose.pose.orientation.y = 0;
-// //   srv.request.kinematics_pose.pose.orientation.z = 0;
-
-//   srv_task_space_grab.request.path_time = path_time;
-
-//   if(goal_task_space_client_.call(srv_task_space_grab))
-//   {
-//     return srv_task_space_grab.response.is_planned;
-//   }
-//   return false;
-// }
 
 bool VSGraspingNode::setToolControl(std::vector<double> joint_angle, double path_time)
 {
