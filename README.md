@@ -4,10 +4,15 @@ VSGraspingNode is a ROS-based implementation for performing vision-based graspin
 
 <p align="center">
   <img src="videos/0.5 s.gif" alt="Demo Video 1" width="200"/>
+  <img src="videos/grasping1.gif" alt="Demo Video 2" width="200"/>
 </p>
 
+## Coordinate Frames
+
+The following picture indicates some of the coordinate frames in the system, including the object, the base, the first arm's joint, and the eye-to-hand fixed camera.
+
 <p align="center">
-  <img src="videos/grasping1.gif" alt="Demo Video 2" width="200"/>
+  <img src="figures/practical_setup.png" alt="co_frames" width="400"/>
 </p>
 
 ## Features
