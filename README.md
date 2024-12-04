@@ -3,11 +3,11 @@
 VSGraspingNode is a ROS-based implementation for performing vision-based grasping operations for a moving object. This node is responsible for receiving object pose information, handling start commands for visual servoing (VS), and executing grasping actions. It also includes utility functions for matrix operations and coordinate transformations. The setup uses Open Manipulator and Kinect.
 
 <p align="center">
-  <img src="videos/0.5 s.gif" alt="Demo Video 1" width="500"/>
+  <img src="videos/0.5 s.gif" alt="Demo Video 1" width="200"/>
 </p>
 
 <p align="center">
-  <img src="videos/grasping1.gif" alt="Demo Video 2" width="500"/>
+  <img src="videos/grasping1.gif" alt="Demo Video 2" width="200"/>
 </p>
 
 ## Features
